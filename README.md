@@ -1,6 +1,6 @@
 ﻿# JUMP-KPMG-Portfolio-Project
 
-## Checkout live website: https://yamrodriguez.netlify.app/
+## Checkout live website: https://yamilethrodriguez.netlify.app/
 ## Wireframe:
 
 ![](wireframe.png)
