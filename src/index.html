@@ -5,14 +5,24 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta charset="UTF-8" />
-
+    <!-- Author Meta -->
+    <meta name="author" content="Yamileth Rodriguez">
+    <!-- Meta Description -->
+    <meta name="description" content="A personal website by Yamileth Rodriguez">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="portfolio">
     <!-- Tab Emoji - Woman on Laptop-->
     <link rel="lil icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
 
     <!-- Site Title-->
     <title>Yam Rodriguez</title>
-
+    <style>
+        img {
+            border-radius: 15px;
+            filter: drop-shadow(0 0 0.75rem rgba(28, 24, 25, 0.267));
+        }
+    </style>
     <!-- CSS stuff-->
     <link rel="stylesheet" href="css/linearicons.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -39,8 +49,8 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li><a href="">Home</a></li>
-                        <li><a href="about">About</a></li>
-                        <li><a href="projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
                         <li><a href="resume-yr.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a>
                         </li>
                     </ul>
@@ -56,7 +66,7 @@
             <div class="row fullscreen align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 col-xs-6 banner-left">
                     <h6>
-                        KPMG Cognixia JUMP Portfolio
+                        Welcome to my portfolio!
                     </h6>
 
                     <h2 class="mt-10 mb-20">Yam Rodriguez</h2>
@@ -64,7 +74,7 @@
                         Recent Statistics graduate with an interest in programming, cloud computing, and system design.
                     </p>
 
-                    <a href="projects" class="primary-btn text-uppercase mb-20">My Projects</a>
+                    <a href="#projects" class="primary-btn text-uppercase mb-20">My Projects</a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-6 banner-right align-self-center">
                     <img src="yampic.jpeg" style="width:auto;height:auto;max-width:100%;">
@@ -79,22 +89,61 @@
     <!-- Start of About Me Area-->
     <section class="home-about-area section-gap">
         <div class="container">
-            <div class="" row align-items-center justify-content-between personal-details">
-                <h1 class="text-uppercase">Personal Details</h1>
+
+            <div class="row align-items-center justify-content-between personal-details">
+                <div id="about">
+                    <h1 class="text-uppercase">Personal Details</h1>
+                </div>
                 <br>
                 <br>
 
                 <blockquote class="generic-blockquote">
-                    <p class="fz-16">
-                        I was born and raised in Chicago, Illinois. In May 2022, I graduated with a Bachelor of Science
-                        degree
-                        in Statistics at the University of Illinois in Urbana-Champaign.
+                    <p class="fz-18">
+                        A bit about me: I'm a 22-year-old recent college graduate from Chicago.
+                        I have an undergraduate degree in Statistics from the University of Illinois in
+                        Urbana-Champaign, conducted research
+                        at a cognitive neuroscience & DNA biotechnology lab for two years, and was a technical
+                        consultant intern at a high-growth start-up this past summer.
+                        <br><br>
+                        Leveraging both my scientific knowledge and previous experiences, I am able to quickly research
+                        and explain a variety of new complex technological concepts, understand user
+                        needs and behaviors, and build intuitive interfaces that convey complex data
+                        to clients.
+                        <br><br>On the weekends, you can find me hiking with my golden retriever
+                        Beni or reading a book about Jeff Bezos.
+
                     </p>
                 </blockquote>
-                <a href="about" class="primary-btn text-uppercase">About Me</a>
+
+                <div class="row d-flex justify-content-center">
+                    
+                    <h6 class="text-uppercase"> Contact Me</h6>
+                  
+                    
+                    <br>
+                </div>
+
+                <div class="container">
+                    <div class="row d-flex">
+
+                        <p class="fz-16">
+                        <form action="./success.html" method="get" target="_blank">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email">
+                            <button type="Submit" class="genric-btn primary-border circle">Submit</button>
+                        </form>
+                        </p>
+
+
+                    </div>
+                </div>
             </div>
+
+        </div>
+
         </div>
     </section>
+
     <!-- End of About Me-->
 
     <div class="container">
@@ -105,9 +154,11 @@
     <section class="service-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="title text-center">
-                    <h1 class="mb-10">Areas of Interest</h1>
-                    <p>My top areas at the moment!</p>
+                <div class="menu-content col-lg-7">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Areas of Interest</h1>
+                        <p>Actively learning and practicing these skills/technologies:</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,7 +170,7 @@
                         <h4>Cloud Computing</h4>
                     </a>
                     <p>
-                        Microsoft Azure Cloud Services
+                        Azure, AWS.
                     </p>
                 </div>
             </div>
@@ -140,10 +191,10 @@
                 <div class="single-services">
                     <span class="lnr lnr-layers"></span>
                     <a>
-                        <h4>Parallel Computing</h4>
+                        <h4>Full Stack Development</h4>
                     </a>
                     <p>
-                        Hadoop, Spark, Azure.
+                        C#, .NET, HTML, CSS, TS, Angular MVC-based framework
                     </p>
                 </div>
             </div>
@@ -166,7 +217,21 @@
                         <h4>System Design</h4>
                     </a>
                     <p>
-                        I'm passionate about building clean, efficient code that delivers results for my clients.
+                        I'm passionate about building clean, efficient code that produces tangible and *measurable*
+                        results to buisnesses.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-services">
+                    <span class="lnr lnr-database"></span>
+                    <a>
+                        <h4>Data Engineering</h4>
+                    </a>
+                    <p>
+                        Developing and executing data processing patterns(ETL) for steaming and batch data via Hadoop,
+                        Spark, and other distributed processing
+                        frameworks for Big Data applications.
                     </p>
                 </div>
             </div>
@@ -280,150 +345,161 @@
 
 
     <hr>
-<!-- Start recent-blog Area -->
-<section class="recent-blog-area section-gap">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8 pb-30 header-text">
-                <h1>My Latest Projects</h1>
-                <p>
-                    Take a look at my recent work.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="single-recent-blog col-lg-4 col-md-4">
-                <div class="thumb">
-                    <a href="https://drive.google.com/file/d/1DwD3laBxNhoTt0Z8omJZs33bDfxt2x3v/view?usp=share_link"
-                        target="_blank">
-                        <img class="f-img img-fluid" src="house.png" alt="">
-                    </a>
-                </div>
-                <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-
-                    <div class="meta">
-                        Jan 20, 2020
+    <!-- Start recent-blog Area -->
+    <section class="recent-blog-area section-gap">
+        <div class="container">
+            <div id="projects">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 pb-30 header-text">
+                        <h1>My Latest Projects</h1>
+                        <p>
+                            Check out my projects:
+                        </p>
                     </div>
                 </div>
-                <a href="https://drive.google.com/file/d/18Ja8iYHKXn05uCsdWzlsBx96AclRIabX/view?usp=sharing"
-                    target="_blank">
-                    <h4>Predicting the Net Hourly Electrical Energy Output of a Power Plant</h4>
-                </a>
-                <p>
-                   <br> ▪ Analyzed data from a dataset containing 9568 data points over a period of 6 years and used outputs to guide the design
-                    of predictive models to determine the efficiency and economic operation of a Combined Cycle Power Plant (CCPP) while
-                    simultaneously considering real-life constraints.<br>
-                    <br>▪ Evaluated the performance of various predictive models using quantitative performance metrics, such as comparing AIC
-                    and ROC curve values, as well as utilizing Generalized Cross-Validation procedures.
-                </p>
             </div>
+            <div class="row">
 
-            <div class="single-recent-blog col-lg-4 col-md-4">
-                <div class="thumb">
+                <div class="single-recent-blog col-lg-4 col-md-4">
+                    <div class="thumb">
+                        <a href="https://drive.google.com/file/d/1DwD3laBxNhoTt0Z8omJZs33bDfxt2x3v/view?usp=share_link"
+                            target="_blank">
+                            <img class="f-img img-fluid" src="house.png" alt="">
+                        </a>
+                    </div>
+                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+                        <div class="meta">
+                            Sep 2020 - Dec 2020
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/18Ja8iYHKXn05uCsdWzlsBx96AclRIabX/view?usp=sharing"
+                        target="_blank">
+                        <h4>Predicting the Net Hourly Electrical Energy Output of a Power Plant</h4>
+                    </a>
+                    <p>
+                        <br> ▪ Analyzed data from a dataset containing 9568 data points over a period of 6 years and
+                        used outputs to guide the design
+                        of predictive models to determine the efficiency and economic operation of a Combined Cycle
+                        Power Plant (CCPP) while
+                        simultaneously considering real-life constraints.<br>
+                        <br>▪ Evaluated the performance of various predictive models using quantitative performance
+                        metrics, such as comparing AIC
+                        and ROC curve values, as well as utilizing Generalized Cross-Validation procedures.
+                    </p>
+                </div>
+
+                <div class="single-recent-blog col-lg-4 col-md-4">
+                    <div class="thumb">
+                        <a href="https://drive.google.com/file/d/1DwD3laBxNhoTt0Z8omJZs33bDfxt2x3v/view?usp=sharing"
+                            target="_blank">
+                            <img class="f-img img-fluid" src="img/alg.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                        <div class="meta">
+                            Apr 2022 - May 2022
+                        </div>
+                    </div>
                     <a href="https://drive.google.com/file/d/1DwD3laBxNhoTt0Z8omJZs33bDfxt2x3v/view?usp=sharing"
                         target="_blank">
-                        <img class="f-img img-fluid" src="img/alg.jpg" alt="">
+                        <h4>Forecasting House Property Sales - Time Series Analysis</h4>
                     </a>
+                    <p>
+                        Team project for STAT429 Final. Our end product aimed to predict the property price based on
+                        these features and explore
+                        the relationship between variables in different areas. We leveraged the 10-Year Breakeven
+                        Inflation Rate Data provided
+                        by the Federal Reserve Bank of St. Louis to observe how inflation may affect our predictions.
+                        <br>
+                        <br>▪ Deployed predictive analytics models to forecast future housing trends using ARIMA models.
+                        <br>▪ Utilized data visualization techniques to present and explain complex data sets.
+                    </p>
                 </div>
-                <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                    <div class="meta">
-                        Dec 10, 2019
-                    </div>
-                </div>
-                <a href="https://drive.google.com/file/d/1DwD3laBxNhoTt0Z8omJZs33bDfxt2x3v/view?usp=sharing"
-                    target="_blank">
-                    <h4>Forecasting House Property Sales - Time Series Analysis</h4>
-                </a>
-                <p>
-                Team project for STAT429 Final. Our end product aimed to predict the property price based on these features and explore
-                the relationship between variables in different areas. We leveraged the 10-Year Breakeven Inflation Rate Data provided
-                by the Federal Reserve Bank of St. Louis to observe how inflation may affect our predictions. <br>
-                <br>▪ Deployed predictive analytics models to forecast future housing trends using ARIMA models.
-                <br>▪ Utilized data visualization techniques to present and explain complex data sets.
-                </p>
-            </div>
 
-            <div class="single-recent-blog col-lg-4 col-md-4">
-                <div class="thumb">
+                <div class="single-recent-blog col-lg-4 col-md-4">
+                    <div class="thumb">
+                        <a href="" target="_blank">
+                            <img class="f-img img-fluid" src="" alt="">
+                        </a>
+                    </div>
+                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+
+                        <div class="meta">
+                            Dec 2022 - Current
+                        </div>
+                    </div>
                     <a href="" target="_blank">
-                        <img class="f-img img-fluid" src="" alt="" style="width:300px;height:294px;">
+                        <h4>Vegan AI - Mobile Application</h4>
                     </a>
-                </div>
-                <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
+                    <p>
+                        <br>▪ Built a recommendation system using Bash, Python, and AWS to provide users with select
+                        plant-based snack
+                        recommendations based on user input and historical data for top-selling vegan snacks on
+                        Amazon.<br>
 
-                    <div class="meta">
-                        Dec 2022 - Current
-                    </div>
+                        <br>▪ Currently working on developing an iOS application using Swift and novel Apple ML
+                        libraries to integrate custom
+                        recommendation system.
+                    </p>
                 </div>
-                <a href="" target="_blank">
-                    <h4>Vegan AI - Mobile Application</h4>
-                </a>
-                <p>
-                    <br>▪ Built a recommendation system using Bash, Python, and AWS to provide users with select plant-based snack
-                    recommendations based on user input and historical data for top-selling vegan snacks on Amazon.<br>
-                    
-                    <br>▪ Currently working on developing an iOS application using Swift and novel Apple ML libraries to integrate custom
-                    recommendation system.
-                </p>
             </div>
         </div>
-    </div>
-</section>
-<!-- end recent-blog Area -->
-<!-- start footer Area -->
-<footer class="footer-area section-gap">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-lg-5 col-md-6 col-sm-6">
-                <div class="single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>Stay updated with my latest projects</p>
-                    <form action="./success.html" method="get" target="_blank">
-                        <label for="Email">Email</label>
-                        <input type="text" name="Email" id="Email">
-                        <button type="Submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                <div class="single-footer-widget">
-                    <h4>Follow Me</h4>
-                    <p>Let's be social. </p>
-                    <div class="footer-social d-flex align-items-center">
-                        <a href=""><i class="fa fa-medium"></i></a>
-                        <a href="https://www.linkedin.com/in/yamileth-949529144/"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://github.com/yrodriguez83"><i class="fa fa-github"></i></a>
+    </section>
+    <!-- end recent-blog Area -->
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h4>Contact Me</h4>
+                        <p>Stay updated with my latest projects:</p>
+                        <form action="./success.html" method="get" target="_blank">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" id="Email">
+                            <button type="Submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                    <div class="single-footer-widget">
+                        <h4>Follow Me</h4>
+                        <p> </p>
+                        <div class="footer-social d-flex align-items-center">
+                            <a href="https://www.linkedin.com/in/yamileth-949529144/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/yrodriguez83" target="_blank"><i class="fa fa-github"></i></a>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- End footer Area -->
+    </footer>
+    <!-- End footer Area -->
 
 
-<script src="js/vendor/jquery-2.2.4.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-<script src="js/easing.min.js"></script>
-<script src="js/hoverIntent.js"></script>
-<script src="js/superfish.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/jquery.tabs.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/simple-skillbar.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/mail-script.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+    <script src="js/easing.min.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.tabs.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/simple-skillbar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

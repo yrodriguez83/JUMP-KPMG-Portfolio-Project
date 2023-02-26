@@ -178,6 +178,7 @@ h4, h5, h6 {
   color: #222222;
 }
 
+
 h1, .h1 {
   font-size: 36px;
 }
@@ -2082,7 +2083,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: #fff;
+  background: #ffffff5e;
 }
 
 #header.header-scrolled {
@@ -2380,6 +2381,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   position: relative;
+  border-radius: 15px;
 }
 
 .primary-btn:focus {
@@ -4401,7 +4403,7 @@ dl.accordion.time-line:before {
 /*  Footer Styles
 /* =================================== */
 .footer-area {
-  background-color: #04091e;
+  background-color: #000000e1;
 }
 
 .single-footer-widget h4 {
