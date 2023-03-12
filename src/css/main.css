@@ -2083,7 +2083,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: #ffffff5e;
+  background: #ffffffac;
 }
 
 #header.header-scrolled {
@@ -2092,7 +2092,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled .main-menu {
-  border-color: transparent;
+  border-color: whitesmoke;
 }
 
 @media (max-width: 673px) {
